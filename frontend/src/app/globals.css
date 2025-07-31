@@ -19,8 +19,34 @@
   }
 }
 
+html,
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f7971e 100%);
+  color: #222;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: #764ba2;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+a:hover {
+  color: #f7971e;
+}
+
+input,
+button {
+  font-family: inherit;
 }
